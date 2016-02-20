@@ -8,7 +8,7 @@ const history = createBrowserHistory()
 import routes from './routes'
 
 const Routes = (
-        <Router history = {history}>
+        <Router history={history}>
           { routes }
         </Router>
 )

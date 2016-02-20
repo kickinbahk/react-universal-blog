@@ -4,7 +4,7 @@ import { Route, IndexRoute, Link } from 'react-router';
 // Main Component
 class App extends Component {
     componentDidMount() {
-        document.body.className='';
+        document.body.className=''
     }
     render() {
         return (
@@ -20,7 +20,7 @@ class App extends Component {
                   </nav>
                 { this.props.children }
             </div>
-        );
+        )
     }
 }
 
@@ -32,7 +32,7 @@ class Home extends Component {
                 <h2>Home</h2>
                 <div>Some home page content</div>
            </div>
-        );   
+        )   
     }
 }
 class About extends Component {
@@ -42,7 +42,7 @@ class About extends Component {
                 <h2>About</h2>
                 <div>Some about page content</div>
             </div>
-        );
+        )
     }
 }
 class Work extends Component {
@@ -52,7 +52,7 @@ class Work extends Component {
                 <h2>Work</h2>
                 <div>Some work page content</div>
             </div>
-        );
+        )
     }
 }
 class Contact extends Component {
@@ -62,7 +62,7 @@ class Contact extends Component {
                 <h2>Contact</h2>
                 <div>Some contact page content</div>
             </div>
-        );
+        )
     }
 }
 class NoMatch extends Component {
@@ -72,17 +72,17 @@ class NoMatch extends Component {
                 <h2>NoMatch</h2>
                 <div>404 error</div>
             </div>
-        );
+        )
     }
 }
 
 export default (
-        <Route path="/" component{App}>
+        <Route path="/" component={App}>
           <IndexRoute component={Home} />
           <Route path="about" component={About} />
           <Route path="work" component={Work} />
           <Route path="*" component={NoMatch} />
         </Route>
-);
+)
 
 

@@ -1,7 +1,7 @@
 {
     "name": "react-universal-blog",
     "version": "1.0.0",
-    "description": "",
+    "description": "Simple blog app with react and node",
     "main": "app-server.js",
     "dependencies": {
         "babel": "^5.8.29",
@@ -14,12 +14,13 @@
         "history": "^1.14.0",
         "hogan-express": "^0.5.2",
         "lodash": "^3.10.1",
+        "react": "^0.14.1",
         "react-dom": "^0.14.1",
         "react-router": "^1.0.1",
         "webpack": "^1.12.2"
     },
     "scripts": {
-        "development": "cp views/index.html public/index.html && NODE_ENV=development webpack && webpack-dev-server --content-base public/ --hot --inline --devtool inline-source-map --history-api-fallback"        
+        "development": "cp views/index.html public/index.html && NODE_ENV=development webpack && webpack-dev-server --content-base public/ --hot --inline --devtool inline-source-map --history-api-fallback"
     },
     "author": "Josiah Mory",
     "license": "ISC",
