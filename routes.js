@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Route, IndexRoute, Link } from 'react-router';
+import React, { Component } from 'react'
+import { Route, IndexRoute, Link } from 'react-router'
 
 // Main Component
 class App extends Component {
@@ -78,10 +78,10 @@ class NoMatch extends Component {
 
 export default (
         <Route path="/" component={App}>
-          <IndexRoute component={Home} />
-          <Route path="about" component={About} />
-          <Route path="work" component={Work} />
-          <Route path="*" component={NoMatch} />
+          <IndexRoute component={Home}/>
+          <Route path="about" component={About}/>
+          <Route path="work" component={Work}/>
+          <Route path="*" component={NoMatch}/>
         </Route>
 )
 
