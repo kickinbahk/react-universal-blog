@@ -1,3 +1,4 @@
+// app-client.js
 import React from 'react'
 import { render } from 'react-dom'
 import { Router } from 'react-router'
@@ -8,13 +9,10 @@ const history = createBrowserHistory()
 import routes from './routes'
 
 const Routes = (
-        <Router history={history}>
-          { routes }
-        </Router>
+  <Router history={history}>
+    { routes }
+  </Router>
 )
 
-const app = document.getElementbyId('app')
+const app = document.getElementById('app')
 render(Routes, app)
-
-
-

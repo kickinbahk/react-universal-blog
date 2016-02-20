@@ -52,7 +52,7 @@ export default class Blog extends Component {
             const slug = this.props.params.slug
             const articles_object = _.indexBy(articles, 'slug')
             const article = articles_object[slug]
-            main_content =
+            main_content = <BlogSingle article={ article } />
 
         }
 
